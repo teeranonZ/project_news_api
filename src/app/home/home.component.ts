@@ -6,7 +6,6 @@ import { NewsArticle } from '../news-article.model';
 import { NewsStorageService } from '../news-storage.service';
 
 
-
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -18,7 +17,8 @@ export class HomeComponent implements OnInit {
   newsDisplay: NewsArticle[] = [];
   totalResults = 0;
   private previousNews: NewsArticle[] = [];
-
+  searchQuery: string = '';
+  
   constructor(
     private route: ActivatedRoute,
     private newsapiService: NewsapiService,
