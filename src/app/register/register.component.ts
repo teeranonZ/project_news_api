@@ -131,6 +131,4 @@ export class RegisterComponent {
     this.errorFields = [];
     this.submitted = false; // เมื่อกดปุ่ม Clear Form ก็เปลี่ยนค่าตัวแปร submitted เป็น false
   }
-
-  
 }

@@ -11,9 +11,8 @@ import { AuthGuard } from './auth.guard';
 { path: 'register', component: RegisterComponent },
 { path: 'login', component: LoginComponent },
 { path: 'home', component: HomeComponent, canActivate: [AuthGuard] },
-{ path: 'category/:category', component: HomeComponent }, // Dynamic route
+{ path: 'category/:category', component: HomeComponent }, // เป็นเส้นทางแบบไดนามิกที่ใช้พารามิเตอร์ category เพื่อระบุหมวดหมู่ข่าว
 { path: 'info', component: InfoComponent }
-
 ];
 
 @NgModule({

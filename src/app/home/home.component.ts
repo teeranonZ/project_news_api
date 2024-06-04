@@ -17,8 +17,7 @@ export class HomeComponent implements OnInit {
   newsDisplay: NewsArticle[] = [];
   totalResults = 0;
   private previousNews: NewsArticle[] = [];
-  searchQuery: string = '';
-  
+
   constructor(
     private route: ActivatedRoute,
     private newsapiService: NewsapiService,
